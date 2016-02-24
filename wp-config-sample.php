@@ -20,13 +20,15 @@
 
 // ** MySQL-innstillinger - Dette får du fra din nettjener ** //
 /** Navnet på WordPress-databasen */
-define('DB_NAME', 'database_name_here');
+
+define('DB_NAME', 'local-wp');
 
 /** MySQL-databasens brukernavn */
-define('DB_USER', 'username_here');
+define('DB_USER', 'root');
 
 /** MySQL-databasens passord */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', '');
+
 
 /** MySQL-tjener */
 define('DB_HOST', 'localhost');
