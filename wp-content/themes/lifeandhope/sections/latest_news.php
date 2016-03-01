@@ -46,9 +46,12 @@
 
 				echo '<div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel">';
 
+					echo '<div class="all_latest_news">';
 					/* Wrapper for slides */
+						the_widget( 'WP_Widget_Recent_Posts' );
+					echo '</div>';
 
-					echo '<div class="carousel-inner" role="listbox">';
+					echo '<div class="carousel-inner" role="listbox" style="width: 65%;">';
 
 
 						//$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
@@ -71,6 +74,7 @@
 											echo $newSlideActive;
 										}
 										else if($i_latest_posts % 4 == 1){
+
 											echo $newSlide;
 										}
 
@@ -93,15 +97,15 @@
 											echo '<div class="latesnews-content">';
 
 												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
+												echo '<div class="latestnews-description">';
+													$ismore = @strpos( $post->post_content, '<!--more-->');
 
-												$ismore = @strpos( $post->post_content, '<!--more-->');
-
-												if($ismore) {
-													the_content( sprintf( esc_html__('[...]','zerif-lite'), '<span class="screen-reader-text">'.esc_html__('about ', 'zerif-lite').get_the_title().'</span>' ) );
-												} else {
-													the_excerpt();
-												}
-
+													if($ismore) {
+														the_content( sprintf( esc_html__('[...]','zerif-lite'), '<span class="screen-reader-text">'.esc_html__('about ', 'zerif-lite').get_the_title().'</span>' ) );
+													} else {
+														echo excerpt(25);
+													}
+												echo '</div>';
 											echo '</div>';
 
 										echo '</div><!-- .latestnews-box"> -->';
@@ -158,6 +162,7 @@
 						wp_reset_postdata();
 
 					echo '</div><!-- .carousel-inner -->';
+
 
 					/* Controls */
 					echo '<a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev">';
