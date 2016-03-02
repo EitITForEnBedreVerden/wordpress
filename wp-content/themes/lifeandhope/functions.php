@@ -42,4 +42,18 @@ function content($limit) {
     return $content;
 }
 
+/* Trimme strl på tittelen på post i frontsiden */
+function trim_title() {
+    $title = get_the_title();
+    $limit = 20;
+    $pad=" ...";
+
+    if(strlen($title) <= $limit) {
+        echo $title;
+    } else {
+        $title = substr($title, 0, $limit) . $pad;
+        echo $title;
+    }
+}
+
 ?>
