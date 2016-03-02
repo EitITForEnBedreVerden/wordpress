@@ -3,7 +3,7 @@
 }
 
 .latestnews-box {
-    width: 50%;
+    width: 100%;
     padding: 0;
     margin: 0;
     float: left;
@@ -13,13 +13,12 @@
 .latestnews-img{
     padding-top: 5%;
     padding-bottom: 5%;
-    width: 40%;
+    width: 30%;
     float: left;
 }
 
 .latestnews-description{
     text-align: left;
-    margin-left: 45%;
 }
 
 .all_latest_news{
@@ -43,10 +42,13 @@
 }
 
 .latesnews-content{
+    margin-right: 80px;
     color: #FFFFFF;
-    width: 100%;
+    width: 50%;
+    float: right;
 }
 .latestnews-title {
+    text-align: center;
     color: #FFFFFF;
 }
 #carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
