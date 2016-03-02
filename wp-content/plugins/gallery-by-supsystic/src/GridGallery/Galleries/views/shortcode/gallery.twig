@@ -5,10 +5,10 @@
 	{% block gallery_before %}
 		{% if settings.icons is defined and settings.icons.enabled == 'true' %}
 			<style>
-				.{{ settings.icons.effect }} .hi-icon { color: {{ settings.icons.color }} !important; background: {{ settings.icons.background }} !important; }
-				.{{ settings.icons.effect }} .hi-icon:hover { color: {{ settings.icons.hover_color }} !important; background: {{ settings.icons.background_hover }} !important; }
-				.hi-icon { width: {{ settings.icons.size * 2 }}px !important; height: {{ settings.icons.size * 2 }}px !important; }
-				.hi-icon:before { font-size: {{ settings.icons.size|default(16) }}px !important; line-height: {{ settings.icons.size * 2 }}px !important; }
+				 #grid-gallery-{{ gallery.id }} .{{ settings.icons.effect }} .hi-icon { color: {{ settings.icons.color }} !important; background: {{ settings.icons.background }} !important; }
+				 #grid-gallery-{{ gallery.id }} .{{ settings.icons.effect }} .hi-icon:hover { color: {{ settings.icons.hover_color }} !important; background: {{ settings.icons.background_hover }} !important; }
+				 #grid-gallery-{{ gallery.id }} .hi-icon { width: {{ settings.icons.size * 2 }}px !important; height: {{ settings.icons.size * 2 }}px !important; }
+				 #grid-gallery-{{ gallery.id }} .hi-icon:before { font-size: {{ settings.icons.size|default(16) }}px !important; line-height: {{ settings.icons.size * 2 }}px !important; }
 			</style>
 		{% endif %}
 	{% endblock %}
