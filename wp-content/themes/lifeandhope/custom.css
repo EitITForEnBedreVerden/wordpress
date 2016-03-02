@@ -50,7 +50,9 @@
 .latestnews-title {
     text-align: center;
     color: #FFFFFF;
+    width: 100%;
 }
+
 #carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
     width: 100%;
     background: #7a7a7a;

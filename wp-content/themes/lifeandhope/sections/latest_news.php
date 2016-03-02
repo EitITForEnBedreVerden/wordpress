@@ -101,6 +101,7 @@
 
 											echo '<div class="latesnews-content">';
 
+<<<<<<< HEAD
 												$title = get_the_title();
 												if(strlen($title) > 60)
 												{
@@ -109,6 +110,9 @@
 
 
 												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( $title ).'</a></h3>';
+=======
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( get_the_title() ).'</a></h3>';
+>>>>>>> 338e9cafefa10b9c0b0495ef9ef3eaba62fd2947
 												echo '<div class="latestnews-description">';
 													$ismore = @strpos( $post->post_content, '<!--more-->');
 
