@@ -16,14 +16,14 @@
 
 					$zerif_latestnews_title = get_theme_mod('zerif_latestnews_title');
 
-					/* title */
+					// title
 					if( !empty($zerif_latestnews_title) ):
 
-						echo '<h2 class="dark-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
+						echo '<h2 class="white-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
 
 					else:
 
-						echo '<h2 class="dark-text">' . __('Latest news','zerif-lite') . '</h2>';
+						echo '<h2 class="white-text">' . __('blabla','zerif-lite') . '</h2>';
 
 					endif;
 
@@ -44,14 +44,19 @@
 
 				echo '<div class="clear"></div>';
 
+
 				echo '<div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel">';
 
-					echo '<div class="all_latest_news">';
-					/* Wrapper for slides */
-						the_widget( 'WP_Widget_Recent_Posts' );
+					echo '<div class="stripe-content">';
+					echo "stripe-content";
 					echo '</div>';
 
-					echo '<div class="carousel-inner" role="listbox" style="width: 65%;">';
+					//echo '<div class="all_latest_news">';
+					/* Wrapper for slides */
+					//	the_widget( 'WP_Widget_Recent_Posts' );
+					//echo '</div>';
+
+					echo '<div class="carousel-inner" role="listbox" style="width: 60%;">';
 
 
 						//$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
@@ -96,7 +101,7 @@
 
 											echo '<div class="latesnews-content">';
 
-												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( get_the_title() ).'</a></h3>';
 												echo '<div class="latestnews-description">';
 													$ismore = @strpos( $post->post_content, '<!--more-->');
 
@@ -132,7 +137,7 @@
 
 											echo '</div>';
 											echo '<div class="latesnews-content">';
-												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( get_the_title() ).'</a></h3>';
 
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 
@@ -163,16 +168,6 @@
 
 					echo '</div><!-- .carousel-inner -->';
 
-
-					/* Controls */
-					echo '<a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev">';
-						echo '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>';
-						echo '<span class="sr-only">'.__('Previous','zerif-lite').'</span>';
-					echo '</a>';
-					echo '<a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next">';
-						echo '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>';
-						echo '<span class="sr-only">'.__('Next','zerif-lite').'</span>';
-					echo '</a>';
 				echo '</div><!-- #carousel-homepage-latestnews -->';
 
 			echo '</div><!-- .container -->';
