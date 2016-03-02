@@ -800,9 +800,8 @@ table[name="cats"] {
 }
 
 .supsystic-plugin .hidden {
-    display: none!important;
+    display: none;
 }
-
 
 .supsystic-plugin-promo.supsystic-item p {
     white-space: normal;

@@ -101,8 +101,8 @@ class Rsc_Mvc_Module
      */
     public function getLocationUrl()
     {
-        $path = str_replace('\\','/', WP_CONTENT_DIR . '/plugins');
-
+        $path = wp_normalize_path(WP_CONTENT_DIR . '/plugins');
+        
         return plugins_url(str_replace($path, '', $this->location));
     }
 

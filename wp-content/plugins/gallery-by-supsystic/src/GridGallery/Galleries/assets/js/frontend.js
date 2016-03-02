@@ -165,7 +165,7 @@
        var popupType = this.$container.data('popup-type');
 
         if(popupType == 'colorbox') {
-            this.$container.find('.gg-colorbox').colorbox({
+            this.$container.find('.grid-gallery-photos > .gg-colorbox, .hi-icon.gg-colorbox').colorbox({
                 fadeOut: this.$container.data('popup-fadeOut'),
                 fixed:  true,
                 maxHeight: '90%',
@@ -1014,21 +1014,13 @@
 		}, this));
     });
 
-    window.initGridGallery = (function (el, autoInit) {
-        var makeSelector = (function (el) {
-            return '#' + el.id;
-        });
-
-        return new Gallery(makeSelector(el), autoInit);
-    });
-
     window.contentLoaded = (function() {
 
         var $galleries = $('.grid-gallery');
 
         if ($galleries.length > 0) {
             $.each($galleries, (function () {
-                initGridGallery(this, true);
+               new Gallery(this, true);
             }));
         }
 
