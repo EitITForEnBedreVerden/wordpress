@@ -81,3 +81,17 @@
 .contact-us{
 background: #FFFFFF;
 }
+
+.menu-bar{
+	float:left !important;
+	padding-left: 0px;
+	margin-top: -15px;
+}
+
+input[type="search"] {
+	height: 12px;
+}
+
+.widget_search .search-submit {
+	height: 35px;
+}
