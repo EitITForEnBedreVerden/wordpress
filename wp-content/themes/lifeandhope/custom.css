@@ -101,3 +101,7 @@ input[type="search"] {
         height: auto;
     }
 }
+
+.latest-news {
+    background: #ffffff;
+}
