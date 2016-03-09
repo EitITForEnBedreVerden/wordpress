@@ -91,3 +91,13 @@ input[type="search"] {
 .widget_search .search-submit {
 	height: 35px;
 }
+
+@media (min-width: 768px){
+    .team-box {
+        width: 19%;
+    }
+    .team-member .profile-pic{
+        width: auto;
+        height: auto;
+    }
+}
