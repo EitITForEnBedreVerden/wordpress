@@ -65,4 +65,22 @@ function add_search_box( $items, $args ) {
     return $items;
 }
 
+/**
+ * Nytt widgetområde til høyre i "lastest news"/fremhevede innlegg-seksjonen
+ *
+ */
+function featured_posts_widget_right() {
+
+    register_sidebar( array(
+        'name'          => 'Fremhevede innlegg(høyre)',
+        'id'            => 'latest-news-right',
+        'before_widget' => '<div class="stripe-content">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+
+}
+add_action( 'widgets_init', 'featured_posts_widget_right' );
+
 ?>

@@ -19,11 +19,11 @@
 					// title
 					if( !empty($zerif_latestnews_title) ):
 
-						echo '<h2 class="white-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
+						echo '<h2 class="black-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
 
 					else:
 
-						echo '<h2 class="white-text">' . __('blabla','zerif-lite') . '</h2>';
+						echo '<h2 class="black-text">' . __('blabla','zerif-lite') . '</h2>';
 
 					endif;
 
@@ -47,9 +47,11 @@
 
 				echo '<div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel">';
 
-					echo '<div class="stripe-content">';
-					echo "stripe-content";
-					echo '</div>';
+					
+
+					if ( is_active_sidebar( 'latest-news-right' ) ) : 
+							dynamic_sidebar( 'latest-news-right' );
+					endif; 
 
 					//echo '<div class="all_latest_news">';
 					/* Wrapper for slides */
@@ -109,7 +111,7 @@
 												}
 
 
-												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( $title ).'</a></h3>';
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: black">'.wp_kses_post( $title ).'</a></h3>';
 
 												echo '<div class="latestnews-description">';
 													$ismore = @strpos( $post->post_content, '<!--more-->');
@@ -146,7 +148,7 @@
 
 											echo '</div>';
 											echo '<div class="latesnews-content">';
-												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: white">'.wp_kses_post( get_the_title() ).'</a></h3>';
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: black">'.wp_kses_post( get_the_title() ).'</a></h3>';
 
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 

@@ -30,11 +30,8 @@
 }
 
 .stripe-content{
-    background-color: darkgrey;
-    color: white;
     width: 35%;
     float: right;
-    height: 400px;
 }
 
 .latesnews-content{
@@ -138,3 +135,16 @@ input[type="search"] {
     }
   
 
+@media (min-width: 768px){
+    .team-box {
+        width: 19%;
+    }
+    .team-member .profile-pic{
+        width: auto;
+        height: auto;
+    }
+}
+
+.latest-news {
+    background: #ffffff;
+}
