@@ -47,9 +47,11 @@
 
 				echo '<div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel">';
 
-					echo '<div class="stripe-content">';
-					echo "stripe-content";
-					echo '</div>';
+					
+
+					if ( is_active_sidebar( 'latest-news-right' ) ) : 
+							dynamic_sidebar( 'latest-news-right' );
+					endif; 
 
 					//echo '<div class="all_latest_news">';
 					/* Wrapper for slides */
