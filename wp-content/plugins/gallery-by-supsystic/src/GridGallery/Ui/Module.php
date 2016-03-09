@@ -86,7 +86,7 @@ class GridGallery_Ui_Module extends Rsc_Mvc_Module
             $this->getLocationUrl() . '/js/types.js',
             $this->getLocationUrl() . '/plugins/grid-gallery.ui.formSerialize.js',
             $this->getLocationUrl() . '/js/jquery.tooltipster.min.js' ,
-            $this->getLocationUrl() . '/js/jquery.slimscroll.js',
+            $this->getLocationUrl() . '/js/slimscroll.min.js',
             $this->getLocationUrl() . '/plugins/grid-gallery.ui.toolbar.js',
             $this->getLocationUrl() . '/js/checkbox-observer.js',
             $this->getLocationUrl() . '/js/toolbar.js',

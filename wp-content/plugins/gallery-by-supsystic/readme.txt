@@ -3,7 +3,7 @@ Contributors: supsystic.com
 Donate link: http://supsystic.com/plugins/gallery
 Tags: add album, add gallery, add pictures, admin, AJAX, album, banner rotator, best gallery, best gallery plugin, comments, content gallery, Facebook, filterable gallery, foto, foto gallery, fotoalbum, fotogalerie, free photo gallery, fullscreen gallery, fullscreen slider, galeri, galerie, Galleria, galleries, gallery, galery, gallery decription, gallery image, gallery lightbox, gallery shortcode, gallery slider, grid, gird, grid gallery, image, image album, image gallery, image lightbox, image rotate, image slider, image slideshow, images, images gallery, instagram, jquery, jquery gallery, lightbox, media, mosaic, multiple pictures, polaroid, polaroid gallery, photo, photo album, photo albums, photo gallery, photoalbum, photogallery, photography, photos, photoset, picture, pictures, post feed gallery, responsive, responsive gallery, responsive wordpress photo gallery, sidebar, Simple gallery, slide, slide show, slideshow, thumbnail, thumbnail view, thumbnails, thumbs, upload images, upload photos, video gallery, videos, view images, view pictures, vimeo, watermarking, watermarks, website gallery, widget gallery, wordpress gallery, wordpress gallery plugin, wordpress photo gallery plugin, wp gallery, wp gallery plugins, youtube
 Tested up to: 4.4.2
-Stable tag: 1.6.5
+Stable tag: 1.6.6
 
 Photo Gallery with visual editor to build amazing photo galleries. Responsive mobile ready gallery include grid, carousel, polaroid and more templates
 
@@ -291,6 +291,12 @@ Important! Photo gallery plugin shortcode must be added in a text editor page, a
 
 == Changelog ==
 
+= 1.6.6 / 23.02.2016 =
+ * Fix conflict with Agivee theme
+ * Added gallery cache clearing when changing images order
+ * Add possibility to have two galleries on page with same ID
+ * Minor issues fixes
+ 
 = 1.6.5 / 16.02.2016 =
  * Added possibility to change gallery name
  * Fix bug with prettyPhoto popup on mobile devices

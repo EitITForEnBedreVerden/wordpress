@@ -235,7 +235,8 @@
                     form.input('number', 'thumbnail[border][radius]', settings.thumbnail.border.radius, { 'style': { 'width': '140px'} })
                     ~ form.select('thumbnail[border][radius_unit]', ['pixels', 'percents'], settings.thumbnail.border.radius_unit, { 'style': 'margin-top: -2px; height: 27px' }), 'border-radius') }}
 
-
+                    {% block disableRightClick %}
+                    {% endblock %}
 
                     </thead>
                 </table>
