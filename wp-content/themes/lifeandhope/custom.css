@@ -6,6 +6,12 @@
     clear:both;
 }
 
+body {
+    background-size: cover !important;
+}
+
+
+
 .latestnews-img{
     padding-top: 5%;
     padding-bottom: 5%;
@@ -87,6 +93,10 @@ input[type="search"] {
 
 .widget_search .search-submit {
 	height: 35px;
+}
+
+.search-form>label {
+    margin-bottom: 0px;
 }
 
 .background-lightgray {
