@@ -127,11 +127,13 @@ wp_head(); ?>
 			</nav>
 			
 		</div>
+		<div class="background-lightgray" id="sub_navbar">
 		<div class="container">	
 			<nav class="menu-bar navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
 				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'zerif-lite' ); ?></a>
 				<?php wp_nav_menu( array('menu' => 'Menu bar', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right responsive-nav main-nav-list', 'fallback_cb'     => 'zerif_wp_page_menu')); ?>
 			</nav>
+		</div>
 		</div>
 	</div>
 	<!-- / END TOP BAR -->
