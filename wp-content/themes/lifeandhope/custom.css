@@ -157,11 +157,16 @@ input[type="search"] {
 
 .latest-news {
     background: #ffffff;
+    color: black;
+}
+
+.latestnews-description{
+    color: black;
 }
 
 .about-us p {
     text-align: left;
     color: white;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 25px;
 }
