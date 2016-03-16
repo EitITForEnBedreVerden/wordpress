@@ -87,14 +87,6 @@ background: #FFFFFF;
 	margin-top: -15px;
 }
 
-input[type="search"] {
-	height: 12px;
-}
-
-.widget_search .search-submit {
-	height: 35px;
-}
-
 .search-form>label {
     margin-bottom: 0px;
 }
