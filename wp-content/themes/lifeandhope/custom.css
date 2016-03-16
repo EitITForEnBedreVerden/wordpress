@@ -184,3 +184,7 @@ input[type="search"] {
 .wp-caption img[class*="wp-image-"] {
     margin-bottom: 8px;
 }
+
+.header-content-wrap{
+    padding: 194px 0 100px;
+}
