@@ -170,3 +170,13 @@ input[type="search"] {
     font-size: 17px;
     line-height: 25px;
 }
+
+.wp-caption {
+    border: none;
+}
+
+.wp-caption-text{
+    padding: 3%;
+    font-size: 14px;
+    font-style: italic;
+}
