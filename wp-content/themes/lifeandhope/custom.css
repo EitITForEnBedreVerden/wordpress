@@ -35,11 +35,6 @@ body {
     background: #272727;
 }
 
-.stripe-content{
-    width: 35%;
-    float: right;
-}
-
 .latesnews-content{
     margin-right: 80px;
     color: #000000;
@@ -181,7 +176,9 @@ background: #FFFFFF;
     padding: 194px 0 100px;
 }
 
-#carousel-homepage-latestnews .carousel-inner .section-header, #carousel-homepage-latestnews .stripe-content .section-header{
+.latest-news .container .row .column .stripe-content .section-header,
+.latest-news .container .row .column .section-header
+{
     padding-bottom: 20px;
 }
 

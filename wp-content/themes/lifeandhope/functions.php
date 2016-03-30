@@ -85,7 +85,7 @@ function featured_posts_widget_right() {
         'after_widget'  => '</div>',
         'before_title'  => '
                             <div class="section-header">
-                            <h2 class="black-text widget-title">
+                            <h2 class="black-text">
                             
         ',
         'after_title'   => '</h2></div>',
