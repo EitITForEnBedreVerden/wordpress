@@ -42,13 +42,13 @@ body {
 
 .latesnews-content{
     margin-right: 80px;
-    color: #FFFFFF;
+    color: #000000;
     width: 50%;
     float: right;
 }
 .latestnews-title {
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
     width: 100%;
 }
 
@@ -179,4 +179,12 @@ background: #FFFFFF;
 
 .header-content-wrap{
     padding: 194px 0 100px;
+}
+
+#carousel-homepage-latestnews .carousel-inner .section-header, #carousel-homepage-latestnews .stripe-content .section-header{
+    padding-bottom: 20px;
+}
+
+.widget_translate{
+    padding-left: 15px;
 }

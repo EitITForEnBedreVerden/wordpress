@@ -61,9 +61,14 @@ add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
 function add_search_box( $items, $args ) {
     if ($args->theme_location == 'primary') {
         $items .= '<li class="widget widget_search">' . get_search_form(false) . '</li>';
+        $items .= '<li class="widget widget_translate">' . do_shortcode('[google-translator]') . '</li>';
+
     }
     return $items;
 }
+
+
+
 
 /**
  * Nytt widgetområde til høyre i "lastest news"/fremhevede innlegg-seksjonen
@@ -74,10 +79,16 @@ function featured_posts_widget_right() {
     register_sidebar( array(
         'name'          => 'Fremhevede innlegg(høyre)',
         'id'            => 'latest-news-right',
-        'before_widget' => '<div class="stripe-content">',
+        'before_widget' => '
+                            <div class="stripe-content">    
+                            ',
         'after_widget'  => '</div>',
-        'before_title'  => '<h1 class="widget-title">',
-        'after_title'   => '</h1>',
+        'before_title'  => '
+                            <div class="section-header">
+                            <h2 class="black-text widget-title">
+                            
+        ',
+        'after_title'   => '</h2></div>',
     ) );
 
 }
