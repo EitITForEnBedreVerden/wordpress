@@ -17,20 +17,16 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 	if (is_active_sidebar('latest-news-right')):
 		dynamic_sidebar('latest-news-right');
 	endif;
-
 	echo '</div>';
 
 
 	echo '<div class="carousel slide col-lg-6 col-md-6 column" data-ride="carousel">';
 
-
-	
-
 	//echo '<div class="all_latest_news">';
 	/* Wrapper for slides */
 	//	the_widget( 'WP_Widget_Recent_Posts' );
 	//echo '</div>';
-	
+
 	/* SECTION HEADER */
 
 	echo '<div class="section-header">';
@@ -57,6 +53,8 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 
 	echo '<div class="clear"></div>';
 
+
+	//$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
 	$zerif_latest_loop = new WP_Query(array(
 		'post_type' => 'post',
 		'posts_per_page' => $zerif_total_posts,
@@ -177,13 +175,7 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 
 	wp_reset_postdata();
 
-	
-
-
-
 	echo '</div><!-- #carousel-homepage-latestnews -->';
-
-
 
 	echo '</div><!-- .row -->';
 
