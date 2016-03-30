@@ -61,9 +61,14 @@ add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
 function add_search_box( $items, $args ) {
     if ($args->theme_location == 'primary') {
         $items .= '<li class="widget widget_search">' . get_search_form(false) . '</li>';
+        $items .= '<li class="widget widget_translate">' . do_shortcode('[google-translator]') . '</li>';
+
     }
     return $items;
 }
+
+
+
 
 /**
  * Nytt widgetområde til høyre i "lastest news"/fremhevede innlegg-seksjonen
