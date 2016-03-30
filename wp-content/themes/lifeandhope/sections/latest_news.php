@@ -108,6 +108,8 @@
 
 											echo '<div class="latesnews-content">';
 
+												$title = get_the_title();
+
 												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'" style="color: black">'.wp_kses_post( $title ).'</a></h3>';
 
 												echo '<div class="latestnews-description">';
