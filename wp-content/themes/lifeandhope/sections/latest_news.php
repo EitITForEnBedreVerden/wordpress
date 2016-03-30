@@ -13,7 +13,6 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 	echo '<div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel">';
 
 
-
 	if (is_active_sidebar('latest-news-right')):
 		dynamic_sidebar('latest-news-right');
 	endif;
@@ -137,7 +136,7 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 
 				echo '<div class="item ' . $active . '">';
 				echo '<div class="col-md-3 latestnews-box">';
-				echo '<div class="latestnews-img">';
+				/*echo '<div class="latestnews-img">';
 				echo '<a class="latestnews-img-a" href="' . get_permalink() . '" title="' . get_the_title() . '">';
 				if (has_post_thumbnail()):
 					the_post_thumbnail();
@@ -146,17 +145,17 @@ if (!empty($zerif_total_posts) && ($zerif_total_posts > 0)):
 				endif;
 				echo '</a>';
 
-				echo '</div>';
+				echo '</div>'; */
 				echo '<div class="latesnews-content">';
 				echo '<h3 class="latestnews-title"><a href="' . esc_url(get_permalink()) . '" title="' . esc_attr(get_the_title()) . '" style="color: black">' . wp_kses_post(get_the_title()) . '</a></h3>';
 
-				$ismore = @strpos($post->post_content, '<!--more-->');
+				/*$ismore = @strpos($post->post_content, '<!--more-->');
 
 				if ($ismore) {
 					the_content(sprintf(esc_html__('[...]', 'zerif-lite'), '<span class="screen-reader-text">' . esc_html__('about ', 'zerif-lite') . get_the_title() . '</span>'));
 				} else {
 					the_excerpt();
-				}
+				}*/
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
