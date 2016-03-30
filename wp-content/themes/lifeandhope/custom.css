@@ -87,14 +87,6 @@ background: #FFFFFF;
 	margin-top: -15px;
 }
 
-input[type="search"] {
-	height: 12px;
-}
-
-.widget_search .search-submit {
-	height: 35px;
-}
-
 .search-form>label {
     margin-bottom: 0px;
 }
@@ -115,7 +107,7 @@ input[type="search"] {
     line-height: 35px;  */
     font-size: 13px;
     text-transform: uppercase;
-    
+
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -143,7 +135,7 @@ input[type="search"] {
        /* background-color: #D0D0D0; */
        transition: width 0s ease;
     }
-  
+
 
 @media (min-width: 768px){
     .team-box {
@@ -157,4 +149,34 @@ input[type="search"] {
 
 .latest-news {
     background: #ffffff;
+    color: black;
+}
+
+.latestnews-description{
+    color: black;
+}
+
+.about-us p {
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.wp-caption {
+    border: none;
+}
+
+.wp-caption-text{
+    padding: 3%;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    margin-bottom: 8px;
+}
+
+.header-content-wrap{
+    padding: 194px 0 100px;
 }
