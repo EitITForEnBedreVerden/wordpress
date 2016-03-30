@@ -74,10 +74,16 @@ function featured_posts_widget_right() {
     register_sidebar( array(
         'name'          => 'Fremhevede innlegg(høyre)',
         'id'            => 'latest-news-right',
-        'before_widget' => '<div class="stripe-content">',
+        'before_widget' => '
+                            <div class="stripe-content">    
+                            ',
         'after_widget'  => '</div>',
-        'before_title'  => '<h1 class="widget-title">',
-        'after_title'   => '</h1>',
+        'before_title'  => '
+                            <div class="section-header">
+                            <h2 class="black-text widget-title">
+                            
+        ',
+        'after_title'   => '</h2></div>',
     ) );
 
 }
