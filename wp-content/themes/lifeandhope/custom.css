@@ -180,3 +180,7 @@ background: #FFFFFF;
 .header-content-wrap{
     padding: 194px 0 100px;
 }
+
+#carousel-homepage-latestnews .carousel-inner .section-header, #carousel-homepage-latestnews .stripe-content .section-header{
+    padding-bottom: 20px;
+}
