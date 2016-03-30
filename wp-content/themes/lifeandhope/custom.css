@@ -176,6 +176,12 @@ background: #FFFFFF;
     padding: 194px 0 100px;
 }
 
+@media only screen and (max-device-width: 480px){
+    .header-content-wrap{
+        padding: 100px 0 100px;
+    }
+}
+
 .latest-news .container .row .column .stripe-content .section-header,
 .latest-news .container .row .column .section-header
 {
