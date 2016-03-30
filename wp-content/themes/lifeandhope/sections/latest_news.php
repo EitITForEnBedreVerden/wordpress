@@ -67,7 +67,6 @@
 					echo '<div class="carousel-inner" role="listbox">';
 
 
-						//$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
 						$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true, 'category_name' => 'Fremhevet' ) );
 
 						$newSlideActive = '<div class="item active">';
@@ -139,7 +138,7 @@
 
 								} else {
 
-									if( $i_latest_posts == 1 ) $active = 'active'; else $active = '';
+									if($i_latest_posts) $active = 'active'; else $active = '';
 
 									echo '<div class="item '.$active.'">';
 										echo '<div class="col-md-3 latestnews-box">';
