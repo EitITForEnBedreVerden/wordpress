@@ -210,19 +210,18 @@ background: #FFFFFF;
 }
 
 #payment-form-style{
-    overflow:hidden;
-
-    border-color: #ddd;
-
+    overflow: hidden;
     margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid;
+    border: 1px solid rgba(0, 43, 255, 0.2);
     border-radius: 20px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 25px;
+    background-color: rgba(0, 126, 255, 0.08);
+}
 
-    background-color: rgba(0, 43, 255, 0.05);
-   
+#payment-form-style div{
+    margin-bottom: 10px;
 
 }
 
@@ -248,6 +247,11 @@ background: #FFFFFF;
 
 #payment-form-style div select{
         height: 34px;
+}
+
+#payment-form-style div button{
+    margin-top: -10px;
+    width: 100%;
 }
 
 .search-field{
