@@ -255,5 +255,23 @@ background: #FFFFFF;
 }
 
 .search-field{
-    border: 1px solid rgb(0, 0, 0) !important;
+    border: 1px solid #808080 !important;
+}
+
+
+
+.search-field::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+.search-field:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+.search-field::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+.search-field:-ms-input-placeholder {  
+color: black !important;  
 }
