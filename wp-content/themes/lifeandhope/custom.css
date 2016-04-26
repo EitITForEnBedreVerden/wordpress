@@ -233,6 +233,10 @@ color: black !important;
 color: black !important;  
 }
 
+li a{
+	font-family: sans-serif;
+}
+
 
 /* 
 

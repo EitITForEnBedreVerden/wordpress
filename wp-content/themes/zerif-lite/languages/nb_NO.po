@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Zerif Lite\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-09 12:32+0100\n"
-"PO-Revision-Date: 2016-03-30 13:54+0200\n"
+"PO-Revision-Date: 2016-04-13 13:12+0200\n"
 "Language-Team: Themeisle <friends@themeisle.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -533,7 +533,7 @@ msgstr ""
 
 #: functions.php:128
 msgid "About us section"
-msgstr "Om oss"
+msgstr "Kjernetall"
 
 #: functions.php:146
 msgctxt "Lato font: on or off"
@@ -569,7 +569,7 @@ msgstr ""
 
 #: functions.php:380
 msgid "Our team section widgets"
-msgstr ""
+msgstr "Widgets"
 
 #: functions.php:559
 msgid "Zerif - Our focus widget"
@@ -848,11 +848,11 @@ msgstr ""
 
 #: inc/customizer.php:650 inc/customizer.php:689
 msgid "Our focus section"
-msgstr ""
+msgstr "(ikke i bruk)"
 
 #: inc/customizer.php:653 inc/customizer.php:1114
 msgid "Content"
-msgstr ""
+msgstr "Innhold"
 
 #: inc/customizer.php:663 inc/customizer.php:700
 msgid "Hide our focus section?"
@@ -882,7 +882,7 @@ msgstr ""
 
 #: inc/customizer.php:747 inc/customizer.php:947
 msgid "Hide about us section?"
-msgstr ""
+msgstr "Sjule kjernetall-seksjonen?"
 
 #: inc/customizer.php:760 inc/customizer.php:953
 msgid "About"
@@ -1000,7 +1000,7 @@ msgstr ""
 
 #: inc/customizer.php:1110 inc/customizer.php:1149
 msgid "Our team section"
-msgstr ""
+msgstr "Styret"
 
 #: inc/customizer.php:1124 inc/customizer.php:1160
 msgid "Hide our team section?"
@@ -1028,7 +1028,7 @@ msgstr ""
 
 #: inc/customizer.php:1192 inc/customizer.php:1196 inc/customizer.php:1242
 msgid "Testimonials section"
-msgstr ""
+msgstr "(ikke i bruk)"
 
 #: inc/customizer.php:1206 inc/customizer.php:1252
 msgid "Hide testimonials section?"
@@ -1054,7 +1054,7 @@ msgstr ""
 
 #: inc/customizer.php:1291
 msgid "Latest News section"
-msgstr ""
+msgstr "Blogg"
 
 #: inc/customizer.php:1300
 msgid "Hide latest news section?"
@@ -1070,7 +1070,7 @@ msgstr ""
 
 #: inc/customizer.php:1329 inc/customizer.php:1393
 msgid "Ribbon sections"
-msgstr ""
+msgstr "(ikke i bruk)"
 
 #: inc/customizer.php:1332
 msgid "BottomButton Ribbon"
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: inc/customizer.php:1459
 msgid "Contact us section"
-msgstr ""
+msgstr "(ikke i bruk)"
 
 #: inc/customizer.php:1469
 msgid "Hide contact us section?"
